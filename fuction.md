@@ -1,7 +1,7 @@
-# HỆ THỐNG QUẢN LÝ KÝ TÚC XÁ
+# HỆ THỐNG QUẢN LÝ ĐẠI LÝ KINH DOANH
 
 ## 1. Giới thiệu hệ thống
-Hệ thống quản lý ký túc xá được xây dựng nhằm hỗ trợ quản lý thông tin sinh viên, phòng ở, khu/dãy, hợp đồng và các hoạt động liên quan trong ký túc xá. Hệ thống giúp việc quản lý trở nên nhanh chóng, chính xác và hiệu quả hơn.
+Hệ thống quản lý đại lý kinh doanh được xây dựng nhằm hỗ trợ quản lý thông tin đại lý, hàng hóa và giá bán. Hệ thống giúp việc quản lý trở nên nhanh chóng, chính xác và hiệu quả hơn trong hoạt động kinh doanh.
 
 ---
 
@@ -10,127 +10,76 @@ Hệ thống quản lý ký túc xá được xây dựng nhằm hỗ trợ qu�
 Hệ thống có các đối tượng sử dụng sau:
 
 - Quản trị viên (Admin)
-- Nhân viên quản lý ký túc xá
+- Nhân viên quản lý
 
 ---
 
 ## 3. Các chức năng của hệ thống
 
-### 3.1 Chức năng đăng nhập
+### 3.1 Quản lý đại lý
 
 **Mô tả:**  
-Cho phép người dùng đăng nhập vào hệ thống bằng tài khoản.
+Cho phép quản lý thông tin các đại lý kinh doanh.
 
 **Các chức năng:**
 
-- Nhập tên đăng nhập  
-- Nhập mật khẩu  
-- Kiểm tra thông tin đăng nhập  
-- Chuyển vào màn hình chính khi đăng nhập thành công  
+- Thêm đại lý mới  
+- Sửa thông tin đại lý  
+- Xóa đại lý  
+- Xem danh sách đại lý  
 
 ---
 
-### 3.2 Quản lý sinh viên
+### 3.2 Quản lý hàng hóa
 
 **Mô tả:**  
-Cho phép quản lý thông tin sinh viên trong ký túc xá.
+Cho phép quản lý các sản phẩm/hàng hóa trong hệ thống.
 
 **Các chức năng:**
 
-- Thêm sinh viên mới  
-- Sửa thông tin sinh viên  
-- Xóa sinh viên  
-- Tìm kiếm sinh viên  
-- Hiển thị danh sách sinh viên  
+- Thêm hàng hóa mới  
+- Sửa thông tin hàng hóa  
+- Xóa hàng hóa  
+- Xem danh sách hàng hóa  
 
 ---
 
-### 3.3 Quản lý phòng
+### 3.3 Quản lý giá
 
 **Mô tả:**  
-Cho phép quản lý các phòng trong ký túc xá.
+Cho phép điều chỉnh giá bán của hàng hóa.
 
 **Các chức năng:**
 
-- Thêm phòng mới  
-- Sửa thông tin phòng  
-- Xóa phòng  
-- Tìm kiếm phòng  
-- Hiển thị danh sách phòng  
+- Xem giá hiện tại  
+- Chỉnh sửa giá tiền  
+- Cập nhật giá mới  
 
 ---
 
-### 3.4 Quản lý dãy/khu
+### 3.4 Quản lý nhập/xuất hàng
 
 **Mô tả:**  
-Cho phép quản lý các dãy hoặc khu trong ký túc xá.
+Cho phép điều chỉnh số lượng hàng hóa trong kho.
 
 **Các chức năng:**
 
-- Thêm dãy/khu  
-- Sửa thông tin dãy/khu  
-- Xóa dãy/khu  
-- Hiển thị danh sách dãy/khu  
+- Thêm số lượng hàng (nhập hàng)  
+- Giảm số lượng hàng (xuất hàng)  
+- Điều chỉnh tồn kho  
+- Xem số lượng hàng hiện có  
 
 ---
 
-### 3.5 Quản lý loại phòng
+### 3.5 Báo cáo thống kê
 
 **Mô tả:**  
-Cho phép phân loại phòng (Nam/Nữ, số người, loại phòng,...).
+Cho phép xem thống kê tổng hợp hoạt động kinh doanh.
 
 **Các chức năng:**
 
-- Thêm loại phòng  
-- Sửa loại phòng  
-- Xóa loại phòng  
-- Hiển thị danh sách loại phòng  
-
----
-
-### 3.6 Quản lý khóa và lớp
-
-**Mô tả:**  
-Cho phép quản lý khóa học và lớp học của sinh viên.
-
-**Các chức năng:**
-
-- Thêm khóa  
-- Sửa khóa  
-- Xóa khóa  
-- Hiển thị danh sách khóa  
-
-- Thêm lớp  
-- Sửa lớp  
-- Xóa lớp  
-- Hiển thị danh sách lớp  
-
----
-
-### 3.7 Quản lý hợp đồng
-
-**Mô tả:**  
-Cho phép quản lý hợp đồng ở ký túc xá của sinh viên.
-
-**Các chức năng:**
-
-- Tạo hợp đồng mới  
-- Cập nhật hợp đồng  
-- Hủy hợp đồng  
-- Hiển thị danh sách hợp đồng  
-
----
-
-### 3.8 Báo cáo thống kê
-
-**Mô tả:**  
-Cho phép xem thống kê tổng hợp về hoạt động ký túc xá.
-
-**Các chức năng:**
-
-- Thống kê số lượng sinh viên  
-- Thống kê số lượng phòng  
-- Thống kê tình trạng phòng (đã ở / còn trống)  
-- Thống kê hợp đồng  
+- Thống kê số lượng đại lý  
+- Thống kê số lượng hàng hóa  
+- Thống kê tồn kho  
 
 ---
